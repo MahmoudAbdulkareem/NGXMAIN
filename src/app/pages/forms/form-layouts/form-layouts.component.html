@@ -1,0 +1,197 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1 style="color: #030F40;"></h1>
+    <button type="submit" nbButton status="primary" class="top-left-button" style="bottom: 15px; margin-left: 100px; color: #030F40;" onclick="location.href='/pages/modal-overlays/window';">Valider et envoyer en validation</button>
+    <button type="submit" nbButton status="primary" class="top-mid-button" style="bottom: 15px; margin-left: 100px; color: #030F40;" onclick="location.href='/pages/forms/inputs';">Annuler</button>
+    <button type="submit" nbButton status="primary" class="top-right-button" style="bottom: 15px; margin-right: -80px; color: #030F40;" onclick="location.href='/pages/forms/inputs';">Sauvegarder/ Fermer</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <nb-card>
+      <nb-card-body>
+        <form>
+          <div class="form-group">
+            <label for="inputStatut" class="label" style="color: #030F40;">ID Fiscal</label>
+            <p style="margin-left: 300px; color: #030F40;">457029301</p>
+          </div>
+          <div class="form-group">
+            <label for="inputFiche" class="label" style="color: #030F40;">N° SIREN</label>
+            <p style="margin-left: 300px; color: #030F40;">457029301</p>
+          </div>
+          <div class="form-group">
+            <label for="inputDate" class="label" style="color: #030F40;">Nom du fournisseur</label>
+            <input type="text" nbinput="" fullwidth="" fieldsize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-left: 100px; width: 265px; height: 25px;">
+          </div>
+          <div class="form-group">
+            <label for="inputType" class="label" style="color: #030F40;">Segment d'achat</label>
+            <select id="inputType" class="styled-select" style="margin-left: 120px;">
+              <option value="1">Détaillant</option>
+              <option value="2">Grossiste</option>
+              <option value="3">Prestataire</option>
+              <option value="4">Sous-Traitant</option>
+          </select>
+
+
+
+          </div>
+          <div class="form-group">
+            <label for="inputType" class="label" style="color: #030F40;">Groupe d'achat</label>
+            <select id="inputType" class="styled-select" style="margin-left: 130px;">
+              <option value="1">Détaillant</option>
+              <option value="2">Grossiste</option>
+              <option value="3">Prestataire</option>
+              <option value="4">Sous-Traitant</option>
+          </select>
+
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="inputDate" class="label" style="color: #030F40;">Condition de paiement</label>
+            <p style="margin-left: 310px; color: #030F40;">Paypal</p>
+          </div>
+          <div class="form-group">
+            <label for="inputType" class="label" style="color: #030F40;">Type de Fournisseur</label>
+            <select id="inputType" class="styled-select" style="margin-left: 103px;">
+              <option value="1">Détaillant</option>
+              <option value="2">Grossiste</option>
+              <option value="3">Prestataire</option>
+              <option value="4">Sous-Traitant</option>
+          </select>
+
+          </div>
+        </form>
+      </nb-card-body>
+    </nb-card>
+
+    <nb-card>
+      <nb-card-body>
+        <form>
+          <div class="form-group">
+            <label for="inputStatut" class="label" style="color: #030F40;">Code DUNS</label>
+            <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 116px; width: 265px; height: 25px;">
+          </div>
+          <div class="form-group">
+            <label for="inputFiche" class="label" style="color: #030F40;">Code APE</label>
+            <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 128px; width: 265px; height: 25px;">
+          </div>
+          <div class="form-group">
+            <label for="inputDate" class="label" style="color: #030F40;">Libellé APE</label>
+            <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 118px; width: 265px; height: 25px;">
+          </div>
+          <div class="form-group">
+            <label for="inputType" class="label" style="color: #030F40;">Num TVA intraco</label>
+            <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 80px; width: 265px; height: 25px;">
+          </div>
+          <div class="form-group">
+            <label for="inputType" class="label" style="color: #030F40;">Taille de l'entreprise</label>
+            <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 57px; width: 265px; height: 25px;">
+          </div>
+          <div class="form-group">
+            <label for="inputType" class="label" style="color: #030F40; margin-left: 30px;">CP</label>
+            <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 138px; width: 265px; height: 25px;">
+          </div>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-md-6">
+    <nb-card>
+      <nb-card-body>
+        <div class="form-group">
+          <label for="inputNom" class="label" style="color: #030F40;">Adresse du siège social</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 25px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputTel" class="label" style="color: #030F40;">Ligne 1</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 119px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputEmail" class="label" style="color: #030F40;">CP</label>
+          <input type="mail" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 147px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputVille" class="label" style="color: #030F40;">Ville</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 135px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputpay" class="label" style="color: #030F40;">Pays</label>
+          <select id="inputType" class="styled-select" style="margin-left: 135px;">
+            <option value="1">Détaillant</option>
+            <option value="2">Grossiste</option>
+            <option value="3">Prestataire</option>
+            <option value="4">Sous-Traitant</option>
+        </select>
+
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="inputfi" class="label" style="color: #030F40;">Type de classification fiscale</label>
+          <br>
+          <nb-checkbox style="margin-left: 100px; color: #030F40;">Achat</nb-checkbox>
+          <nb-checkbox style="margin-left: 150px; color: #030F40;">Encaissement</nb-checkbox>
+        </div>
+        <div class="form-group">
+          <label for="inputmailfrn" class="label" style="color: #030F40;">Contact email FRN pour dématérialisation fiscale</label>
+          <br>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 120px; width: 265px; height: 25px;">
+        </div>
+      </nb-card-body>
+    </nb-card>
+
+    <nb-card>
+      <nb-card-body>
+        <div class="form-group">
+          <label for="inputNom" class="label" style="color: #030F40;">Extrait Kbis</label>
+          <p style="margin-left: 75px; color: #030F40;">Grillot, Jordane</p>
+        </div>
+        <div class="form-group">
+          <label for="inputTel" class="label" style="color: #030F40;">Attestation de vigilance URSSAF</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 120px; width: 265px; height: 25px;">
+
+        </div>
+        <div class="form-group">
+          <label for="inputPro" class="label" style="color: #030F40;">N° attestation de vigilance URSAFF</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 120px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputPro" class="label" style="color: #030F40;">Emploi de salariés étrangers ?</label>
+          <select id="combo" name="combo" style="margin-left: 120px; width: 265px; height: 25px;">
+            <option value="yes" style="color: #030F40;">Oui</option>
+            <option value="no" style="color: #030F40;">Non</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="inputPro" class="label" style="color: #030F40;">Attestation fiscale</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 10px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputPro" class="label" style="color: #030F40;">Commentaire /Justificatif du besoin de création fournisseur</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 120px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputPro" class="label" style="color: #030F40;">Commentaire de modification</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 120px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputPro" class="label" style="color: #030F40;">A désactiver le</label>
+          <nb-card-body>
+            <input nbInput fieldSize="smaller" style="margin-left: 5px; width: 52%;"
+                   placeholder="Date"
+                   [nbDatepicker]="formpicker">
+            <nb-datepicker #formpicker></nb-datepicker>
+          </nb-card-body>              </div>
+        <div class="form-group">
+          <label for="inputPro" class="label" style="color: #030F40;">Commentaire de modification</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 120px; width: 265px; height: 25px;">
+        </div>
+        <div class="form-group">
+          <label for="inputPro" class="label" style="color: #030F40;">Joindre un document complémentaire</label>
+          <input type="text" nbInput fullWidth fieldSize="small" placeholder="Small Input" style="margin-left: 120px; width: 265px; height: 25px;">
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

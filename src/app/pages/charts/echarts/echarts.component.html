@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <link rel="stylesheet" href="echarts.component.scss">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>Choisir le Back-Up</h2>
+            <div class="form-group">
+                <label for="fournisseur">Fournisseur</label>
+                <select id="fournisseur" class="styled-select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fonction">Fonction</label>
+                <select id="fonction" class="styled-select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="perimetre">Perimetre</label>
+                <select id="perimetre" class="styled-select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="segment-achat">Segment Achat</label>
+                <select id="segment-achat" class="styled-select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="groupe-achat">Groupe Achat</label>
+                <textarea id="groupe-achat" class="styled-textarea"></textarea>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Details</h2>
+            <div class="form-group">
+                <label>Type Acheteur</label>
+                <label><input type="radio" name="type-acheteur" value="local"> Local</label>
+                <label><input type="radio" name="type-acheteur" value="national"> National</label>
+            </div>
+            <div class="form-group">
+                <label for="acheteur-backup">Acheteur Back Up</label>
+                <select id="acheteur-backup" class="styled-select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </div>
+            <div class="form-group">
+
+              <label><input type="checkbox"> Actif</label>
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> 14.10 : POLYMERES</label>
+                <label><input type="checkbox"> 14.11 : COAGULANT MINERAL BASE FER</label>
+                <label><input type="checkbox"> 14.12 : PHOSPHATES</label>
+                <label><input type="checkbox"> 14.13 : COAGULANT MINERAL BASE ALUMINIUM</label>
+            </div>
+            <a href="/pages/tables/smart-table" class="save-button">
+                <img src="assets/images/save.png" alt="Save Image" class="save-image">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

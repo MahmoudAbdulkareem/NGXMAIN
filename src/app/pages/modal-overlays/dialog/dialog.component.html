@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir le PB du site d'achat</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="title">Choisir le PB du site d'achat</div>
+    <div class="option-group">
+      <br>
+      <label>
+        <input type="radio" name="location" value="local"> Local
+      </label>
+      <br><br>
+      <label>
+        <input type="radio" name="location" value="national"> National
+      </label>
+      <div id="regionSelect" style="margin-left: 235px; margin-bottom: 55px;">
+        <label style="margin-left: 55px;">Choisir sa (ses) region(s)</label>
+        <br>
+        <select style="margin-left: 5px; width: 265px; height: 25px;">
+          <option value="1">Détaillant</option>
+          <option value="2">Grossiste</option>
+          <option value="3">Prestataire</option>
+          <option value="4">Sous-Traitant</option>
+        </select>
+      </div>
+      <div class="checkbox-group">
+        <div>
+          <label>
+            <input type="checkbox" [(ngModel)]="allSelected" (change)="toggleAllCheckboxes($event)"> Tout Selectionner
+          </label>
+          <br>
+        </div>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Selection</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let checkbox of checkboxes">
+              <td><input type="checkbox" [(ngModel)]="checkbox.selected"></td>
+              <td>{{ checkbox.label }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn btn-primary" style="margin-left: 125px; font-weight: bold; color: #030F40; font-size: 13px; " onclick="location.href='/pages/modal-overlays/dialog';">Enregistrer mes modifications</button>
+      <button class="btn btn-secondary" style="margin-left: 15px; font-weight: bold; color: #030F40; font-size: 13px;" onclick="location.href='/pages/modal-overlays/dialog';">Fermer</button>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>

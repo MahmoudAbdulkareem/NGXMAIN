@@ -1,0 +1,141 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1></h1>
+    <button type="submit" nbButton status="primary" class="top-left-button" style="bottom: 15px; margin-left: 95px; color: #030F40;" onclick="location.href='/pages/modal-overlays/window';">Valider et envoyer en validation</button>
+    <button type="submit" nbButton status="primary" class="top-mid-button" style="bottom: 15px; margin-left: 95px; color: #030F40;" onclick="location.href='/pages/forms/buttons';">Annuler</button>
+    <button type="submit" nbButton status="primary" class="top-right-button" style="bottom: 15px; margin-right: -95px; color: #030F40;" onclick="location.href='/pages/forms/buttons';">Sauvegarder/ Fermer</button>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-6">
+    <nb-card>
+      <nb-card-body>
+        <form>
+          <a href="/pages/forms/buttons" class="preremp-button">
+            <img src="assets/images/preremp.png" alt="Preremp Image" class="pre-image">
+        </a>
+
+          <div class="form-group">
+
+            <label for="inputtext" class="label" style="color: #030F40;">Nom du Site</label>
+            <div class="demo-items" style="margin-left: 100px;">
+              <input type="text" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 150px; width: 245px; height: 25px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputFiche" class="label" style="color: #030F40;">Adresse du site</label>
+            <div class="demo-items" style="margin-left: 100px;">
+              <input type="text" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 150px; width: 245px; height: 25px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputtext" class="label" style="color: #030F40;">Ligne</label>
+            <div class="demo-items" style="margin-left: 100px;">
+              <input type="number" min="0" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 150px; width: 245px; height: 25px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputtext" class="label" style="color: #030F40;">Ligne 2</label>
+            <div class="demo-items" style="margin-left: 100px;">
+              <input type="number" min="0" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 150px; width: 245px; height: 25px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputtext" class="label" style="color: #030F40;">Code Postal</label>
+            <div class="demo-items" style="margin-left: 100px;">
+              <input type="number" min="0" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 150px; width: 245px; height: 25px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputtext" class="label" style="color: #030F40;">Ville</label>
+            <div class="demo-items" style="margin-left: 100px;">
+              <input type="text" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 150px; width: 245px; height: 25px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputtext" class="label" style="color: #030F40;">Pays</label>
+            <div class="demo-items" style="margin-left: 100px;">
+              <input type="text" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 150px; width: 245px; height: 25px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputtext" class="label" style="color: #030F40;">Téléphone</label>
+            <div class="demo-items" style="margin-left: 100px;">
+              <input type="number" min="0" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 150px; width: 245px; height: 25px;">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Mail" class="label" style="color: #030F40;">Mail</label>
+            <div class="demo-items" style="margin-left: 100px; position: relative;">
+              <input type="text" nbInput fullwidth fieldSize="small" placeholder="Small Input" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 190px; width: 245px; height: 25px;">
+
+            </div>
+          </div>
+
+
+
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-md-6">
+    <nb-card>
+      <nb-card-body>
+        <div class="form-group">
+          <label for="inputNom" class="label" style="color: #030F40;">Périmètre d'intervention du Fournisseur</label>
+          <div class="d-flex align-items-center" style="margin-left: 100px;">
+            <input type="text" nbInput fullwidth fieldSize="small" placeholder="Périmètre" class="input-full-width size-small status-basic shape-rectangle nb-transition" style="margin-right: 10px; width: 245px; height: 25px;">
+            <button nbButton status="info" shape="round" (click)="openHistoryDialog(historyDialog)" style="padding: 0; border: none; background: none;">
+              <img src="assets/images/history.png" alt="History Icon" style="width: 20px; height: 20px;">
+            </button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputTel" class="label" style="color: #030F40;">Région d'application du Site d'achat</label>
+          <p></p>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail" class="label" style="color: #030F40;">PB d'application du Site d'achat</label>
+          <p></p>
+          <div class="form-group">
+            <label for="inputtext" class="label" style="color: #030F40;">Sans date de désactivation</label>
+            <nb-checkbox style="margin-left: 50px; margin-bottom: 55px;"></nb-checkbox>
+          </div>
+          <label for="inputtext" class="label" style="color: #030F40;">A désactiver le</label>
+          <div class="demo-items" style="margin-left: 45px;">
+            <nb-card-body>
+              <input nbInput fieldSize="smaller" style="margin-left: 35px;" placeholder="Date" [nbDatepicker]="formpicker">
+              <nb-datepicker #formpicker></nb-datepicker>
+            </nb-card-body>
+          </div>
+        </div>
+      </nb-card-body>
+      <div class="col-md-12">
+        <h1></h1>
+        <button type="submit" nbButton status="primary" class="top-left-button" style="margin-left: -525px; bottom: 25px; margin-top: 50px; color: #030F40;" onclick="location.href='/pages/forms/buttons';">Créer un nouveau site</button>
+        <button type="submit" nbButton status="primary" class="top-left-button" style="margin-left: -215px; bottom: 25px; margin-top: 50px; color: #030F40;" onclick="location.href='/pages/forms/buttons';">Enregistrer mes modifications</button>
+        <button type="submit" nbButton status="primary" class="top-down-button" style="margin-left: 35px; bottom: 25px; margin-top: 90px; color: #030F40; background-color: #F67536;" onclick="location.href='/pages/modal-overlays/dialog';">Définir le périmètre</button>
+      </div>
+    </nb-card>
+  </div>
+</div>
+
+<ng-template #historyDialog>
+  <nb-card>
+    <nb-card-header>Modification History</nb-card-header>
+    <nb-card-body>
+      <div *ngFor="let history of modificationHistory">
+        <p><strong>Date:</strong> {{ history.date }}</p>
+        <p><strong>Status:</strong> {{ history.status }}</p>
+        <p><strong>Modified By:</strong> {{ history.modifiedBy }}</p>
+        <p><strong>Old Value:</strong> {{ history.oldValue }}</p>
+        <p><strong>New Value:</strong> {{ history.newValue }}</p>
+        <hr>
+      </div>
+    </nb-card-body>
+    <nb-card-footer>
+      <button nbButton status="danger" (click)="closeHistoryDialog()">Close</button>
+    </nb-card-footer>
+  </nb-card>
+</ng-template>

@@ -1,0 +1,137 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #030F40;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.sidebar, .main-content {
+  flex: 1;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #030F40;
+}
+
+.form-group p {
+  margin: 0;
+  color: #333;
+}
+
+.form-group input, .form-group textarea, .form-group nb-select {
+  width: 75%;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.actions button {
+  padding: 8px 16px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.actions .validate, .actions .refuse {
+  background-color: #77B7FC;
+  color: #030F40;
+}
+
+.actions .validate:hover, .actions .refuse:hover {
+  background-color: #6095D6;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#confirm-validate {
+  background-color: #77B7FC;
+  color: #030F40;
+}
+
+#confirm-validate:hover {
+  background-color: #6095D6;
+}
+
+#cancel-validate {
+  background-color: #FFC229;
+  color: #030F40;
+}
+
+#cancel-validate:hover {
+  background-color: #D9A30F;
+}
+
+.warning {
+  background-color: #FFC229;
+  border: 1px solid #FFC229;
+  color: #030F40;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin: 0 0 10px;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup.show {
+  visibility: visible;
+  opacity: 1;
+}

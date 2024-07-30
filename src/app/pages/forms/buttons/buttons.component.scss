@@ -1,0 +1,137 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  .buttons-row {
+    margin: -0.5rem;
+  }
+
+  button[nbButton] {
+    margin: 0.5rem;
+  }
+
+  .action-icon {
+    @include nb-ltr(margin-right, 0.5rem);
+    @include nb-rtl(margin-left, 0.5rem);
+  }
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 12px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  padding: 20px;
+}
+
+.top-image-button {
+  background-color: #FFC229;
+  transition: background-color 0.3s ease;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
+.top-image-button:hover {
+  background-color: #CD9E2E; 
+}
+
+.top-down-button {
+  position: absolute;
+  top: 8px;
+  left: 335px;
+  background-color: #F67536;
+  color: #030F40;
+  padding: 2px 1px;
+  font-size: 12px;
+  transition: background-color 0.8s ease;
+}
+
+.top-down-button:hover {
+  background-color: #C56138;
+}
+
+.sidebar-dialog {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 30%;
+  height: 100%;
+  transition: right 0.3s ease-in-out;
+  z-index: 1050;
+}
+
+.sidebar-dialog.open {
+  right: 0;
+}
+
+.top-left-button,
+.top-mid-button,
+.top-right-button {
+  position: absolute;
+  background-color: #77B7FC;
+  color: #030F40;
+  padding: 2px 1px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.top-left-button {
+  top: 8px;
+  left: 535px;
+}
+
+.top-mid-button {
+  top: 8px;
+  left: 800px;
+  padding: 35px 15px;
+}
+
+.top-right-button {
+  top: 8px;
+  right: 116px;
+}
+
+.top-left-button:hover,
+.top-mid-button:hover,
+.top-right-button:hover {
+  background-color: #6095D6;
+}
+
+.top-image {
+  width: 5%;
+  height: 2%;
+  border: 1px solid rgb(129, 128, 128);
+  object-fit: cover;
+  margin-left: 500px;
+}
+
+
+
+
+.preremp-button {
+  display: inline-block;
+  margin-top: 3px;
+  margin-left: 500px;
+  background-color: #FFC229;
+  padding: 4px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #CD9E2E;
+  }
+  img.pre-image {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+  }
+
+}

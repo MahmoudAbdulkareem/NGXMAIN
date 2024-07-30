@@ -1,0 +1,93 @@
+<div class="row">
+  <div class="col-md-12" >
+    <h1></h1>
+    <button type="submit" nbButton status="primary" class="top-left-button" style="bottom: 15px; margin-left: 100px; color: #030F40;" onclick="location.href='/pages/modal-overlays/window';">Valider et envoyer en validation</button>
+          <button type="submit" nbButton status="primary" class="top-mid-button" style="bottom: 15px; margin-left: 100px; color: #030F40;" onclick="location.href='/pages/forms/inputs';">Annuler</button>
+          <button type="submit" nbButton status="primary" class="top-right-button" style="bottom: 15px; margin-right: -76px; color: #030F40;" onclick="location.href='/pages/forms/inputs';">Sauvegarder/ Fermer</button>
+      </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <nb-card>
+      <nb-card-body>
+        <form>
+          <div class="form-group">
+            <label for="inputStatut" class="label" style="color: #030F40;">Statut</label>
+            <p style="margin-left: 175px;">Brouillon</p>
+          </div>
+          <div class="form-group">
+            <label for="inputFiche" class="label" style="color: #030F40;">N° de la fiche </label>
+            <p style="margin-left: 190px;">169</p>
+          </div>
+          <div class="form-group">
+            <label for="inputDate" class="label" style="color: #030F40;">Date de création de la fiche</label>
+            <input type="date" nbInput fullWidth id="inputDate" fieldSize="small" placeholder="Date" style="width: 65%; margin-left: 50px;">
+          </div>
+          <div class="form-group">
+            <label for="inputType" class="label" style="color: #030F40;">Type de demande</label>
+            <div class="demo-items">
+              <nb-checkbox style="color: #030F40;">Creation</nb-checkbox>
+              <nb-checkbox style="margin-left: 185px;">Modification</nb-checkbox>
+            </div>
+          </div>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-md-6">
+    <nb-card>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputNom" class="label" style="color: #030F40;">Nom Demandeur</label>
+              <br>
+              <p>Grillot, Jordane</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputTel" class="label" style="color: #030F40;">Téléphone du demandeur </label>
+              <p>0772339866</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputEmail" class="label" style="color: #030F40;">Mail du demandeur</label>
+              <p>jordane.grillot@suez.com</p>
+            </div>
+          </div>
+
+          <label for="inputPro" class="label" style="margin-left: 15px; color: #030F40;">Region du demandeur </label>
+          <nb-card-body style="margin-left: -150px;">
+            <br>
+            <nb-select selected="1" >
+              <nb-option value="1" style="color: #030F40;">Region 1</nb-option>
+              <nb-option value="2" style="color: #030F40;">Region 2</nb-option>
+            </nb-select>
+          </nb-card-body>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputPro" class="label" style="color: #030F40;">Profession du demandeur </label>
+              <td nowrap style="color: #030F40;"> RESPONSABLE MOA</td>
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <div class="warning">
+      <p>!!!!!!!!!!Vérifier précisément les données du FNH dans Simpac!!!!!!!!!</p>
+  </div>
+
+
+  </div>
+</div>
+
+<style>
+
+</style>

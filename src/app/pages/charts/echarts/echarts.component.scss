@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,300');
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .left-section, .right-section {
+    width: 48%;
+  }
+
+  h2 {
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    select, input[type="checkbox"], textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      font-size: 12px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+  }
+
+  .checkbox-group {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      padding: 5px;
+      cursor: pointer;
+      font-size: 12px;
+
+      &:hover {
+        background-color: #77B7FC;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .save-button {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 530px;
+    background-color: #FFC229;
+    padding: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #CD9E2E;
+    }
+
+    img.save-image {
+      width: 25px;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+}
+
+.styled-select {
+  appearance: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 12px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  option {
+    padding: 10px;
+  }
+}
+
+.styled-textarea {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 12px; 
+  resize: none;
+}

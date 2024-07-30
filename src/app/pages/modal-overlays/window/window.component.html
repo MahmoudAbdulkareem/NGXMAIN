@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+          <div class="form-group">
+            <label for="creation-date" style="font-size: 22px; font-style: italic;">Partie Validation</label>
+          </div>
+            <div class="form-group">
+                <label for="creation-date">Date de création :</label>
+                <input type="date" nbInput fullWidth id="inputDate" fieldSize="small" placeholder="Date" style="width: 45%; margin-left: 25px;">
+              </div>
+            <div class="form-group">
+                <label for="created-by">Créé par :</label>
+                <p style="width: 45%; margin-left: 175px;"> Grillot, Jordane </p>
+              </div>
+              <br><br>
+            <div class="form-group">
+                <label style="margin-left: 125px; width: 38%; background-color: #BBDBFD; color: #030F40;">Validation Acheteur Local</label>
+                <textarea placeholder="Commentaire" style="margin-left: 35px;"></textarea>
+            </div>
+            <div class="form-group">
+                <label style="margin-left: 115px; width: 42%; background-color: #BBDBFD; color: #030F40; ">Validation Acheteur National</label>
+                <textarea placeholder="Commentaire" style="margin-left: 35px;"></textarea>
+            </div>
+            <div class="form-group">
+                <label style="margin-left: 125px; width: 38%; background-color: #BBDBFD; color: #030F40; ">Validation Admin SIMPAC</label>
+                <textarea placeholder="Commentaire" style="margin-left: 35px;"></textarea>
+
+            </div>
+            <br>
+            <div class="actions">
+              <div class="actions">
+                <button class="validate" style="margin-left: 65px;" (click)="validate()">Valider</button>
+                <button class="refuse" style="margin-left: 175px;">Refuser</button>
+              </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="form-group">
+                <label for="inputStatut">Statut</label>
+                <p style="margin-left: 150px;">En Cours</p>
+            </div>
+            <div class="form-group">
+                <label for="inputFiche">N° de la fiche</label>
+                <p style="margin-left: 165px;">169</p>
+            </div>
+            <div class="form-group">
+                <label for="inputDate">Date de création de la fiche</label>
+                <input type="date" nbInput fullWidth id="inputDate" fieldSize="small" placeholder="Date" style="width: 35%; margin-left: 215px;">
+              </div>
+            <div class="form-group">
+                <label for="inputType">Type de demande</label>
+                <div class="demo-items">
+                    <nb-checkbox checked style="margin-left: 135px;">Creation</nb-checkbox>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputNom">Nom Demandeur</label>
+                <p style="margin-left: 125px;">Grillot, Jordane</p>
+            </div>
+            <div class="form-group">
+                <label for="inputTel">Téléphone du demandeur</label>
+                <p style="margin-left: 195px;">0772339866</p>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Mail du demandeur</label>
+                <p style="margin-left: 155px;">jordane.grillot@suez.com</p>
+            </div>
+            <div class="form-group">
+                <label for="inputPro">Région du demandeur</label>
+                <nb-select selected="1" style="width: 30%; margin-left: 25px;">
+                    <nb-option value="1">Region 1</nb-option>
+                    <nb-option value="2">Region 2</nb-option>
+                </nb-select>
+            </div>
+            <div class="form-group">
+                <label for="inputPro">Profession du demandeur</label>
+                <p style="margin-left: 195px;">RESPONSABLE MOA</p>
+            </div>
+            <div class="warning">
+                <p>!!!!!!!!!!Vérifier précisément les données du FNH dans Simpac!!!!!!!!!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+      <!-- Popup -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <p style="font-size: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-weight: bold; font-style: italic;" onclick="location.href='/pages/tables/smart-table';">Les documents utilisateurs ont été validés!</p>
+          <button id="cancel-validate" onclick="location.href='/pages/modal-overlays/window';">Cancel</button>
+        </div>
+      </div>
+
+      <ng-template #contentTemplate let-data>
+        <p>{{ data.text }}</p>
+      </ng-template>
+
+    </div>
+</body>
+</html>
